@@ -17,7 +17,7 @@ $brand-language: #B01302;
 }
 
 .jumbotron {
-  background: url(<%= asset_path 'hero.png' %>) no-repeat center center;
+  background: url(/assets/hero.jpg) no-repeat center center;
   background-size: cover;
   color: white;
   padding-top: 20%;
