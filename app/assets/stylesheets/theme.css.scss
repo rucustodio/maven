@@ -5,6 +5,11 @@ $brand-language: #B01302;
   background: transparent;
   position: absolute;
   width: 100%;
+
+  .navbar-nav {
+    float: right;
+    margin: 0px 15px;
+  }
   
   a {
     color: white;
