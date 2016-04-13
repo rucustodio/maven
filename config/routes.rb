@@ -1,13 +1,25 @@
 Rails.application.routes.draw do
-  devise_for :users
   resources :widgets
+  resources :products
+  resources :reviews
 
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
+  get 'about' => 'static#about'
 
-  # You can have the root of your site routed with "root"
+  get 'contact' => 'static#contact'
+
+  get 'help' => 'static#help'
+
+  get 'sitemap' => 'static#sitemap'
+
+  get 'terms' => 'static#terms'
+
+  get 'privacy' => 'static#privacy'
 
   root 'welcome#index'
+
+  get 'products/:id/review' => 'reviews#new'
+
+  devise_for :users  
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

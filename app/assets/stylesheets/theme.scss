@@ -1,0 +1,65 @@
+$brand-primary: #179054;
+$brand-language: #B01302;
+
+.navbar {
+  background: none;
+  position: absolute;
+  width: 100%;
+  border-radius: 0rem !important;
+  margin-bottom: 35px;
+
+  .navbar-brand {
+    color: $brand-primary !important;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif !important;
+  }
+  
+  a {
+    font-size: 16px;
+
+    &:hover, &:focus {
+      background: none !important;
+    }
+  }
+}
+
+.jumbotron {
+  background: url(/assets/hero.jpg) no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding-top: 20%;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+
+  .container {
+    z-index: 5;
+    position: relative;
+  }
+
+  p {
+    color: lighten($brand-primary, 50%);
+    max-width: 75%;
+    margin: 1em auto 2em;
+  }
+}
+
+.mask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 0;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .jumbotron h1 {
+    font-size: 65px;
+  }  
+}
+

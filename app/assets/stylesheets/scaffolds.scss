@@ -1,0 +1,34 @@
+$brand-primary: #179054;
+$brand-language: #B01302;
+
+body {
+  background: transparent;
+  font-family: 'Raleway', sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+h1,
+h3,
+h5 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 65px;
+}
+
+.btn-primary {
+    background: lighten($brand-primary, 10%) !important;
+    border-color: lighten($brand-primary, 10%) !important;
+    &:hover {
+      background: lighten($brand-primary, 15%) !important;
+    }
+  }

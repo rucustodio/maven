@@ -1,0 +1,10 @@
+<div>
+    <h2>Review for <%= @product.title %></h2>
+    <p>by <%= @user.email %></p>
+    <p><%= @review.rating %></p>
+    <p><%= @review.description %></p>
+    <%= link_to 'Edit review', {controller: 'reviews', action: 'edit', id: @review}, :class => 'btn btn-primary' %>
+</div>
+
+
+
