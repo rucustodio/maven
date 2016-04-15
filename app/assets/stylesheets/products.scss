@@ -2,13 +2,45 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.product {
-  img {
+.product-show {
+  img.product-image {
     width: 100%;
+    padding-bottom: 25px;
+  }
+
+  p.product-description {
+    font-size: 20px;
+    padding: 25px 0;
   }
 }
 
-.media {
+.media.product {
   border: 1px solid #e1e1e1;
   padding: 15px;
+
+  i {
+    a {
+      color: gray;
+      text-decoration: underline;
+    }
+  }
+}
+
+
+@media all and (max-width: 991px) {
+  .media.product {
+    .media-left {
+      padding: 0 0 10px 0;
+      display: block;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .media-body {
+      display: block;
+      width: 100%;
+    }
+  }
 }
